@@ -40,7 +40,7 @@ def convert_feature(feature):
         converted_qualifiers['gene'] = feature.qualifiers['gene'][0]
     if 'inference' in feature.qualifiers and feature.qualifiers['inference']:
         inference_value = feature.qualifiers['inference'][0]
-        # `:`の直後のスペースを除去する
+        # remove the space
         inference_value = inference_value.replace(': ', ':')
         converted_qualifiers['inference'] = inference_value
     if 'note' in feature.qualifiers:
