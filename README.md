@@ -3,6 +3,7 @@
 ## Introduction
 This repository contains a scrippt for reformatting the annotation file created by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP) for DDBJ submission.
 The 'reformat_pgap_into_dfast.py script converts the 'annot.gbk' file, which is included in PGAP output, into the submission format for DDBJ. You can customize the features required for your submission by modifying the 'convert_feature()' function.
+
 Please note that this script only handles the "Features" section. You will need to reformat the other sections (e.g., DBLINK, KEYWORD, etc.) separately.
 <!-- This script was created for personal use with the aim of submitting an annotation file for a metagenome-assembled genome. I hope it proves useful. -->
 
