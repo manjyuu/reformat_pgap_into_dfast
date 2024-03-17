@@ -1,9 +1,12 @@
+#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 from Bio import SeqIO
 import sys
 
 # function for changing the format of locaton 
 def convert_location(location):
-    # locationの書式を変更する
+    # reforat location
     start, end, strand = location.start + 1, location.end, location.strand
     if strand == 1:
         location_str = f"{start}..{end}"
@@ -37,7 +40,7 @@ def convert_feature(feature):
         converted_qualifiers['gene'] = feature.qualifiers['gene'][0]
     if 'inference' in feature.qualifiers and feature.qualifiers['inference']:
         inference_value = feature.qualifiers['inference'][0]
-        # `:`の直後のスペースを除去する
+        # remove the space
         inference_value = inference_value.replace(': ', ':')
         converted_qualifiers['inference'] = inference_value
     if 'note' in feature.qualifiers:
