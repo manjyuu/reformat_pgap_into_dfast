@@ -6,7 +6,7 @@ import sys
 
 # function for changing the format of locaton 
 def convert_location(location):
-    # locationの書式を変更する
+    # reforat location
     start, end, strand = location.start + 1, location.end, location.strand
     if strand == 1:
         location_str = f"{start}..{end}"
