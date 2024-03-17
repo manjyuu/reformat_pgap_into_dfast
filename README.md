@@ -19,6 +19,6 @@ python reformat_pgap_into_dfast.py \<input file path\> \<output file path\>
 ---
 
 ## Author 
-Riku Sakurai
+Riku Sakurai,
 PhD student, Tohoku University
 riku.sakurai.q5@dc.tohoku.ac.jp
