@@ -12,8 +12,11 @@ bio 1.6.2
 
 ## Usage
 ---
+
 python reformat_pgap_into_dfast.py <input file path> <output file path>
+
 ---
+
 ## Author 
 Riku Sakurai
 PhD student, Tohoku University
