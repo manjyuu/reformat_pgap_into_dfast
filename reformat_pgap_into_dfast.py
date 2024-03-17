@@ -1,4 +1,5 @@
 from Bio import SeqIO
+import sys
 
 # function for changing the format of locaton 
 def convert_location(location):
@@ -87,8 +88,8 @@ def remove_gene_features(input_file, output_file):
                     out_handle.write(converted_str)
 
 # path for input/output file
-input_file = 'your_input_file'
-output_file = 'your_output_file'
+input_file = sys.argv[1]
+output_file = sys.argv[2]
 
 # run 
 remove_gene_features(input_file, output_file)
