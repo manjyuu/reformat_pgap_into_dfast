@@ -8,7 +8,7 @@ Please note that this script only handles the "Features" section. You will need 
 <!-- This script was created for personal use with the aim of submitting an annotation file for a metagenome-assembled genome. I hope it proves useful. -->
 
 ## Environment
-python 3.9.9
+python 3.9.9  
 bio 1.6.2
 
 ## Usage
