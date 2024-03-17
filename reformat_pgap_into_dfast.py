@@ -87,8 +87,8 @@ def remove_gene_features(input_file, output_file):
                     out_handle.write(converted_str)
 
 # path for input/output file
-input_file = 'annot.gbk'
-output_file = 'annot_converted.txt'
+input_file = 'your_input_file'
+output_file = 'your_output_file'
 
 # run 
 remove_gene_features(input_file, output_file)
